@@ -143,7 +143,7 @@ main {
 }
 
 .main_slider:nth-child(odd) {
-    padding: 0 10px;
+    margin: 0 10px;
 }
 
 .slider_title {
@@ -160,28 +160,61 @@ main {
 /*------ONCLICK IMAGE------*/
 
 .full_img {
-    max-width: 1540px !important;
-    z-index: 1 !important;
+    max-width: 1540px ;
+    z-index: 1 ;
 }
 
-.min_img {
-    max-width: 120px !important;
-    max-height: 900px;
-    z-index: 1 !important;
+.minProject_img, .minBuild_img, .minExploitation_img {
+    max-width: 120px ;
+    z-index: 1 ;
 }
-
-.slider_title-change {
+.slider_main_title {
     position: absolute;
-    font-size: 3vw;
+    font-size: 6vw;
     font-style: normal;
     font-weight: bold;
     color: #ffffff;
-    top: 78%;
+    top: 30%;
+    left: 3%;
     text-align: center;
     z-index: 3;
-    rotation: 90deg;
 }
+.slider_title-rotate {
+    position: absolute;
+    font-size: 2.6vw;
+    font-style: normal;
+    font-weight: bold;
+    color: #ffffff;
+    top: 68%;
+    text-align: center;
+    z-index: 3 !important;
+   transform:  rotate(-90deg);
+}
+.change_text {
+    position: absolute;
+    font-size: 2.1vw;
+    font-style: normal;
+    font-weight: normal;
+    color: #ffffff;
+    top: 60%;
+    left: 3%;
+    z-index: 3;
+    width: 62vw;
+}
+.change_button {
+    position: absolute;
+    font-size: 1.3vw;
+    font-style: normal;
+    font-weight: normal;
+    color: #ffffff;
+    top: 86%;
+    left: 4%;
+    z-index: 3;
+    background: radial-gradient(122.69% 531.67% at -11.54% -45%, #2998FF 0%, #29F2FF 100%);
+    width: 20vw;
+    height: 3.3vw;
 
+}
 /*-----ADAPTIVE STYLE-----*/
 
 @media (max-width: 1560px) {
