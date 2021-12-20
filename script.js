@@ -157,8 +157,6 @@ slider.addEventListener('click', (event) => {
             </div>
     `;
             break;
-        default:
-            slider.innerHTML = ``;
     }
 })
 
