@@ -88,7 +88,6 @@ slider.addEventListener('click', (event) => {
 
     if (findElemClassName === 'project_img') {
         console.log(111)
-        console.log(document.querySelectorAll('#slider'))
         document.querySelectorAll('#slider').innerHTML = `
     <div>
         <h1 className='slider_title'>{findElem.title}</h1>
