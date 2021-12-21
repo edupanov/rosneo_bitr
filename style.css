@@ -9,6 +9,10 @@ ul {
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 a:active, /* активная/посещенная ссылка */
 a:hover, /* при наведении */
 a {
@@ -126,8 +130,8 @@ main {
 
 .main_slider {
     display: flex;
-    justify-content: space-between;
     width: 100%;
+    margin: 0 auto;
 }
 
 .slider_item {
@@ -135,6 +139,7 @@ main {
     justify-content: center;
     position: relative;
     cursor: pointer;
+    height: 47.4vw;
 }
 
 .slider_item img {
@@ -142,7 +147,7 @@ main {
     z-index: 1;
 }
 
-.main_slider:nth-child(odd) {
+.slider_item:nth-child(odd) {
     margin: 0 10px;
 }
 
@@ -160,14 +165,15 @@ main {
 /*------ONCLICK IMAGE------*/
 
 .full_img {
-    max-width: 1540px ;
-    z-index: 1 ;
+    max-width: 1540px;
+    z-index: 1;
 }
 
 .minProject_img, .minBuild_img, .minExploitation_img {
-    max-width: 120px ;
-    z-index: 1 ;
+    max-width: 120px;
+    z-index: 1;
 }
+
 .slider_main_title {
     position: absolute;
     font-size: 6vw;
@@ -179,6 +185,7 @@ main {
     text-align: center;
     z-index: 3;
 }
+
 .slider_title-rotate {
     position: absolute;
     font-size: 2.6vw;
@@ -188,8 +195,9 @@ main {
     top: 68%;
     text-align: center;
     z-index: 3 !important;
-   transform:  rotate(-90deg);
+    transform: rotate(-90deg);
 }
+
 .change_text {
     position: absolute;
     font-size: 2.1vw;
@@ -201,6 +209,7 @@ main {
     z-index: 3;
     width: 62vw;
 }
+
 .change_button {
     position: absolute;
     font-size: 1.3vw;
@@ -213,8 +222,121 @@ main {
     background: radial-gradient(122.69% 531.67% at -11.54% -45%, #2998FF 0%, #29F2FF 100%);
     width: 20vw;
     height: 3.3vw;
+}
+
+/*-----Our company-----*/
+
+.project_checked {
+    display: none;
+}
+
+.our_company {
+    position: relative;
+    margin-top: 12.7vw;
+    width: 100%;
+}
+
+.our_company_title {
+    font-size: 72px;
+}
+
+.our_company_text {
+    width: 59vw;
+    font-size: 24px;
+}
+
+.our_company_button {
+    position: absolute;
+    right: 0;
+    color: #ffffff;
+    background: radial-gradient(122.69% 531.67% at -11.54% -45%, #2998FF 0%, #29F2FF 100%);
+    padding: 15px 20px;
+    font-size: 18px;
+    bottom: 24vw;
+}
+
+.our_company_blocks {
+    display: flex;
+    margin-top: 75px;
+    box-sizing: border-box;
+}
+
+.block01, .block02, .block03, .block04, .block05, .block06 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 20vw;
+    max-width: 15.8vw;
+    cursor: pointer;
+
 
 }
+
+.block01 {
+    background: #EEF2F6;
+
+}
+
+.block_title {
+    position: relative;
+    width: fit-content;
+    padding: 2.3vw 2.2vw;
+    text-align: center;
+    font-size: 3.5vw;
+    margin: 0;
+}
+
+.block02 .block_title, .block04 .block_title, .block06 .block_title {
+    color: #ffffff;
+}
+
+.block02 .block_text, .block04 .block_text, .block06 .block_text {
+    color: #ffffff;
+}
+
+.block02 img, .block04 img, .block06 img {
+    filter: invert(1)
+}
+
+.block01 .block_title, .block03 .block_title, .block05 .block_title {
+    background: #EEF2F6;
+}
+
+.block02 {
+    background: url("./assets/img/block02.png") no-repeat;
+    background-size: 100%;
+}
+
+.block04 {
+    background: url("./assets/img/block04.png") no-repeat;
+    background-size: 100%;
+}
+
+.block06 {
+    background: url("./assets/img/block06.png") no-repeat;
+    background-size: 100%;
+}
+
+.block_footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6vw 1.4vw;
+}
+
+.block_footer img {
+    position: relative;
+    top: 35px;
+    width: 4.2vw;
+    height: 4.2vw;
+}
+
+.block_text {
+    width: 183px;
+    height: 60px;
+    font-size: 1vw;
+}
+
 /*-----ADAPTIVE STYLE-----*/
 
 @media (max-width: 1560px) {
