@@ -47,60 +47,6 @@ const sliderData = {
 
 slider.addEventListener('click', (event) => {
     console.log(event.target.className)
-    // if (event.target.className === 'project_img' || 'minProject_img') {
-    //     slider.innerHTML = `
-    //         <div class="slider_item project">
-    //             <h1 class='slider_main_title'>${sliderData.project.title}</h1>
-    //             <img class='${sliderData.project.changeClassNameFull}' src='${sliderData.project.changeSrcFull}' alt="">
-    //             <div class="change_text">${sliderData.project.text}</div>
-    //             <button class="change_button">${sliderData.project.button}</button>\
-    //         </div>
-    //         <div class="slider_item  build">
-    //             <h2 class="slider_title-rotate">${sliderData.build.title}</h2>
-    //             <img class='${sliderData.build.changeClassNameMin}' src='${sliderData.build.changeSrcMin}' alt="">
-    //         </div>
-    //         <div class="slider_item exploitation">
-    //             <h2 class="slider_title-rotate">${sliderData.exploitation.title}</h2>
-    //             <img class='${sliderData.exploitation.changeClassNameMin}' src='${sliderData.exploitation.changeSrcMin}' alt="">
-    //         </div>
-    // `
-    // } else if (event.target.className === 'build_img' || 'minBuild_img') {
-    //     slider.innerHTML = `
-    //         <div class="slider_item  project">
-    //             <h2 class="slider_title-rotate">${sliderData.project.title}</h2>
-    //             <img class='${sliderData.project.changeClassNameMin}' src='${sliderData.project.changeSrcMin}' alt="">
-    //         </div>
-    //         <div class="slider_item  build" >
-    //             <h1 class='slider_main_title'>${sliderData.build.title}</h1>
-    //             <img class='${sliderData.build.changeClassNameFull}' src='${sliderData.build.changeSrcFull}' alt="">
-    //             <div class="change_text">${sliderData.build.text}</div>
-    //             <button class="change_button">${sliderData.build.button}</button>\
-    //         </div>
-    //         <div class="slider_item exploitation">
-    //             <h2 class="slider_title-rotate">${sliderData.exploitation.title}</h2>
-    //             <img class='${sliderData.exploitation.changeClassNameMin}' src='${sliderData.exploitation.changeSrcMin}' alt="">
-    //         </div>
-    // `
-    // } else if (event.target.className === 'exploitation_img' || 'minExploitation_img') {
-    //     slider.innerHTML = `
-    //         <div class="slider_item  project">
-    //             <h2 class="slider_title-rotate">${sliderData.project.title}</h2>
-    //             <img class='${sliderData.project.changeClassNameMin}' src='${sliderData.project.changeSrcMin}' alt="">
-    //         </div>
-    //         <div class="slider_item  build">
-    //             <h2 class="slider_title-rotate">${sliderData.build.title}</h2>
-    //             <img class='${sliderData.build.changeClassNameMin}' src='${sliderData.build.changeSrcMin}' alt="">
-    //         </div>
-    //         <div class='slider_item exploitation'>
-    //             <h1 class='slider_main_title'>${sliderData.exploitation.title}</h1>
-    //             <img class='${sliderData.exploitation.changeClassNameFull}' src='${sliderData.exploitation.changeSrcFull}' alt="">
-    //             <div class="change_text">${sliderData.exploitation.text}</div>
-    //             <button class="change_button">${sliderData.exploitation.button}</button>\
-    //         </div>
-    // `
-    // } else {
-    //     slider.innerHTML = ``
-    // }
 
     switch (event.target.className) {
         case 'project_img':
