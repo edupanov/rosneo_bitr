@@ -609,6 +609,23 @@ z-index: 5;
 .slider-button-next img {
 width: 8vw;
 }
+
+/*-----Height corporate standards-----*/
+
+.standards_inner {
+    display: flex;
+    justify-content: space-between;
+}
+.standards_item {
+    position: relative;
+    padding: 10px;
+}
+.standards_item img{
+}
+.standards_title, .standards_text {
+   position: absolute;
+}
+
 /*-----ADAPTIVE STYLE-----*/
 
 @media  (max-width: 1698px){
