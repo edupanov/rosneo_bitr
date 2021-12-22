@@ -1,4 +1,3 @@
-
 const slider = document.querySelector('.main_slider')
 const projectChecked = document.querySelector('.project_checked')
 
@@ -100,5 +99,21 @@ slider.addEventListener('click', (event) => {
             projectChecked.style.display = 'none'
             break;
     }
+})
+
+new Swiper('.image-slider', {
+    navigation: {
+        nextEl: '.slider-button-next'
+    },
+    // отключает свайпы
+    simulateTouch: false,
+    // количество показанных слайдов (можно не целые числа)
+    slidesPerView: 2.5,
+    // отключает сайдер при малом кол-ве картинок
+    watchOverFlow:true,
+    // количество пролистываемых слайдов
+    // slidesPerGroup: 2,
+    // бесконечный слайдер
+    loop: true
 })
 

@@ -227,7 +227,7 @@ main {
 /*-----Our company-----*/
 
 .project_checked {
-    display: none;
+    display: block;
 }
 
 .our_company {
@@ -237,12 +237,12 @@ main {
 }
 
 .our_company_title {
-    font-size: 72px;
+    font-size: 4.2vw;
 }
 
 .our_company_text {
     width: 59vw;
-    font-size: 24px;
+    font-size: 1.52vw;
 }
 
 .our_company_button {
@@ -267,10 +267,10 @@ main {
     justify-content: space-between;
     margin: 0 auto;
     height: 20vw;
-    max-width: 15.8vw;
+    max-height: 380px;
+    width: 15.8vw;
+    max-width: 300px;
     cursor: pointer;
-
-
 }
 
 .block01 {
@@ -337,7 +337,285 @@ main {
     font-size: 1vw;
 }
 
+
+ /*----- Consultation-----*/
+
+.consult {
+
+    margin-top: 12.7vw;
+    position: relative;
+    height: 37vw;
+}
+.logo_consult {
+    position: relative;
+    top: -3vw;
+    left: 6vw;
+    z-index: 3;
+    height: 37vw;
+}
+.logo_consult img {
+    height: 100%;
+}
+
+.consult_background {
+    height: 30.5vw;
+    background: url("./assets/img/bacground_consult.png") no-repeat;
+    z-index: 1;
+    display: flex;
+}
+
+.consult_inner {
+    position: absolute;
+    left: 35vw;
+    width: 56vw;
+    max-width: 1064px;
+    color: #ffffff;
+    margin-top: 1.5vw;
+}
+
+.consult_title {
+    font-size: 3.3vw;
+    letter-spacing: 4px;
+}
+.consult_text {
+    font-size: 1.5vw;
+    margin-bottom: 40px;
+}
+
+.consult_form-style {
+    margin-bottom: 1vw;
+}
+
+.consult_phone_input {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: none;
+    font-size: 2vw;
+    width: 25vw;
+    outline:none;
+    color: #ffffff;
+}
+
+.consult_phone_input:checked {
+    border: none;
+}
+.consult_button {
+    margin-left: 1vw;
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: normal;
+    color: #ffffff;
+    z-index: 3;
+    background: radial-gradient(122.69% 531.67% at -11.54% -45%, #2998FF 0%, #29F2FF 100%);
+    width: 11vw;
+    height: 3.3vw;
+}
+
+.consult_label_text {
+    font-size: 1vw;
+    color: #BDC7D2;
+}
+.consult_phone_input::placeholder {
+    color: #ffffff;
+    font-family: 'Circe-ExtraLight'
+}
+.consult_checkbox:checked,
+.consult_checkbox:not(:checked)
+{
+    position: absolute;
+    left: -9999px;
+}
+
+.consult_checkbox:checked + .consult_label_text,
+.consult_checkbox:not(:checked) + .consult_label_text {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.consult_checkbox:checked + .consult_label_text:before,
+.consult_checkbox:not(:checked) + .consult_label_text:before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #dddddd;
+    background-color: #d3cbcb;
+}
+
+.consult_checkbox:checked + .consult_label_text:before,
+.consult_checkbox:not(:checked) + .consult_label_text:before {
+    border-radius: 2px;
+}
+
+
+.consult_checkbox:checked + .consult_label_text:after,
+.consult_checkbox:not(:checked) + .consult_label_text:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.consult_checkbox:checked + .consult_label_text:after,
+.consult_checkbox:not(:checked) + .consult_label_text:after {
+    left: 2px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid black;
+    background: radial-gradient(376.15% 1137.3% at -162.5% -105.32%, #2998FF 0%, #29F2FF 100%),linear-gradient(
+            0deg, #C4C4C4, #C4C4C4);
+}
+
+
+.consult_checkbox:not(:checked) + .consult_label_text:after {
+    opacity: 0;
+}
+
+.consult_checkbox:checked + .consult_label_text:after{
+    opacity: 1;
+}
+
+/*----- Our progress-----*/
+
+.our_progress {
+
+}
+.our_progress_title_inner {
+    display: flex;
+    position: relative;
+}
+.our_progress_line {
+    position: relative;
+    bottom: 4.6vw;
+    width: 23vw;
+    border-bottom: 1px solid #1A181E;
+    margin-right: 10px;
+}
+.our_progress_title {
+    font-size: 4.2vw;
+}
+.our_progress_inner {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.our_progress_inner_item {
+    position: relative;
+    width: 23.2vw;
+    max-height: 470px;
+    background: #EEF2F6;
+    margin: 10px 10px;
+}
+.our_progress_item1 {
+    position: relative;
+    left: 50%;
+}
+.our_progress_img_bgi {
+    width: 12.62vw;
+    max-width: 210px;
+
+}
+.our_progress_img_bgi5 {
+    width: 23.5vw;
+    max-width: 430px;
+}
+.our_progress_inner_item .img {
+    position: relative;
+    margin-top: 3vw;
+    margin-left: 1.5vw;
+    margin-bottom: 6vw;
+    width: 5.37vw;
+}
+.our_progress_inner_item p:nth-child(even) {
+    font-size: 1.25vw;
+    margin: 0 0 0 1.6vw;
+}
+.our_progress_inner_item p:nth-child(3) {
+    font-size: 4.2vw;
+    margin: 0 0 0 1.6vw;
+}
+.our_progress_inner:nth-child(1){
+}
+.our_progress_inner_item:nth-child(1), .our_progress_inner_item:nth-child(5) {
+    background: #ffffff;
+}
+.our_progress_inner_item:nth-child(2), .our_progress_inner_item:nth-child(4) {
+    flex-grow: 1;
+}
+
+/*-----Our projects slider-----*/
+
+
+.our_projects {
+    position: relative;
+    margin-top: 12.7vw;
+    width: 100%;
+}
+.our_projects_title_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.our_projects_button {
+    color: #ffffff;
+    background: radial-gradient(122.69% 531.67% at -11.54% -45%, #2998FF 0%, #29F2FF 100%);
+    padding: 15px 20px;
+    font-size: 18px;
+    height: 50px;
+}
+.image-slider {
+position: relative;
+overflow: hidden;
+}
+.image-slider_wrapper {
+}
+.image-slider_slide {
+margin: 0 5px;
+}
+.image-slider_image {
+text-align: center;
+width: fit-content;
+
+}
+.image-slider_image p {
+    z-index: 3;
+    position: absolute;
+    color: #ffff;
+    max-width: 527px;
+    font-size: 1.9vw;
+    bottom: 0;
+    margin: 0 0 2vw 1vw;
+    text-align: initial;
+}
+.image-slider_image img {
+max-width: 100%;
+    z-index: 1;
+}
+
+.slider-button-next {
+position: absolute;
+right: 11vw;
+bottom: 5vw;
+z-index: 5;
+}
+.slider-button-next img {
+width: 8vw;
+}
 /*-----ADAPTIVE STYLE-----*/
+
+@media  (max-width: 1698px){
+    .consult_title {
+        font-size: 3.2vw;
+    }
+}
 
 @media (max-width: 1560px) {
     .department {
@@ -345,8 +623,31 @@ main {
     }
 }
 
+@media (max-width: 1853px) {
+    .our_progress_inner_item p:nth-child(3) {
+        font-size: 3.2vw;
+    }
+}
+
+@media (max-width: 1527px) {
+    .our_progress_inner_item p:nth-child(3) {
+        font-size: 3.2vw;
+    }
+}
+@media (max-width: 1120px) {
+    .consult_inner {
+        margin-top: 0;
+    }
+    .our_progress_inner_item p:nth-child(even) {
+        font-size: 2vw;
+    }
+}
+
 @media (max-width: 855px) {
     .info {
         display: none;
+    }
+    .consult_text {
+        margin-bottom: 10px;
     }
 }
