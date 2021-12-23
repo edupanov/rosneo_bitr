@@ -1,6 +1,8 @@
 const slider = document.querySelector('.main_slider')
 const projectChecked = document.querySelector('.project_checked')
 
+// -----Main page slider-----
+
 const sliderData = {
     project: {
         src: './assets/img/project.png',
@@ -101,6 +103,8 @@ slider.addEventListener('click', (event) => {
     }
 })
 
+// -----Project slider-----
+
 new Swiper('.image-slider', {
     navigation: {
         nextEl: '.slider-button-next'
@@ -110,10 +114,104 @@ new Swiper('.image-slider', {
     // количество показанных слайдов (можно не целые числа)
     slidesPerView: 2.5,
     // отключает сайдер при малом кол-ве картинок
-    watchOverFlow:true,
+    watchOverFlow: true,
     // количество пролистываемых слайдов
     // slidesPerGroup: 2,
     // бесконечный слайдер
     loop: true
 })
+
+ymaps.ready(init);
+let myMap;
+
+function init() {
+
+    myMap = new ymaps.Map("map", {
+        center: [43.238253, 76.945465], // Координаты центра карты
+        zoom: 17 // Маштаб карты
+    });
+
+    myMap.controls.add(
+        new ymaps.control.ZoomControl()  // Добавление элемента управления картой
+    );
+
+    myPlacemark = new ymaps.Placemark([55.75021860081118, 37.62227867752328], { // Координаты метки объекта
+        balloonContent: `
+                <div class="map-slider map-container">
+                    <div class="map-slider_wrapper map-wrapper">
+                        <div class="map-slider_slide map-slide">
+                            <div class="map-slider_image">
+                                <img src="./assets/img/our_projects/Mask%20Group%20(2).png" alt="">
+                            </div>
+                        </div>
+                        <div class="map-slider_slide map-slide">
+                            <div class="map-slider_image">
+                                <img src="./assets/img/our_projects/Mask%20Group.png" alt="">
+                            </div>
+                        </div>
+                        <div class="map-slider_slide map-slide">
+                            <div class="map-slider_image">
+                                <img src="./assets/img/our_projects/Mask%20Group%20(1).png" alt="">
+                            </div>
+                        </div>
+                        <div class="map-slider_slide map-slide">
+                            <div class="map-slider_image">
+                                <img src="./assets/img/our_projects/Mask%20Group%20(2).png" alt="">
+                            </div>
+                        </div>
+                        <div class="map-slider_slide map-slide">
+                            <div class="map-slider_image">
+                                <img src="./assets/img/our_projects/Mask%20Group.png" alt="">
+                            </div>
+                        </div>
+                        <div class="map-slider_slide map-slide">
+                            <div class="map-slider_image">
+                                <img src="./assets/img/our_projects/Mask%20Group%20(1).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map_control">
+                        <p class="map_text">Капитальный ремонт офисного здания ПАО "Банк УралСиб" Филиал южный г.Краснодар</p>
+                        <div class="map_button_img"><img src="./assets/img/map/map_button.png" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-scrollbar"></div>
+                 </div>
+
+        `
+    }, {
+        preset: "twirl#redDotIcon" // Тип метки
+    });
+
+    myMap.geoObjects.add(myPlacemark); // Добавление метки
+    myPlacemark.balloon.open(); // Открытие подсказки метки
+
+};
+
+new Swiper('.map-slider', {
+    navigation: {
+        nextEl: '.map_button_img'
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        //Булеты
+       // clickable: true
+        type: 'fraction'
+    },
+    scrollbar: {
+      el: '.swiper-scrollbar'
+    },
+    // отключает свайпы
+    simulateTouch: false,
+    // количество показанных слайдов (можно не целые числа)
+    slidesPerView: 1,
+    // отключает сайдер при малом кол-ве картинок
+    watchOverFlow: true,
+    // количество пролистываемых слайдов
+    // slidesPerGroup: 2,
+    // бесконечный слайдер
+    loop: true
+})
+
+
 
