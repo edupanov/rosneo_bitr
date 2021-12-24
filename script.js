@@ -105,7 +105,7 @@ slider.addEventListener('click', (event) => {
 
 // -----Project slider-----
 
-new Swiper('.image-slider', {
+const swiperProjects = new Swiper('.image-slider', {
     navigation: {
         nextEl: '.slider-button-next'
     },
@@ -177,7 +177,6 @@ function init() {
                     <div class="swiper-pagination"></div>
                     <div class="swiper-scrollbar"></div>
                  </div>
-
         `
     }, {
         preset: "twirl#redDotIcon" // Тип метки
@@ -188,7 +187,7 @@ function init() {
 
 };
 
-new Swiper('.map-slider', {
+const swiperMap = new Swiper('.map-slider', {
     navigation: {
         nextEl: '.map_button_img'
     },
@@ -212,6 +211,54 @@ new Swiper('.map-slider', {
     // бесконечный слайдер
     loop: true
 })
+
+//-----Fake news-----
+
+const sortAll = document.querySelector('#sortAll')
+const sortCompany = document.querySelector('#sortCompany')
+const sortUseful = document.querySelector('#sortUseful')
+const newsWrapper = document.querySelector('.news-wrapper')
+
+const fakeNewsData = [
+    {
+        date: '21.05.2021',
+        src: './assets/img/news/1.png',
+        text: 'Минстрой России предлагает проводить замену и восстановление несущих конструкций зданий в правила подключения'
+    },
+    {
+        date: '21.05.2021',
+        src: './assets/img/news/2.png',
+        text: 'Планируется принять новые правила подключения (технологического присоединения) к правила подключения'
+    },
+    {
+        date: '21.05.2021',
+        src: './assets/img/news/3.png',
+        text: 'Минстрой России предлагает проводить замену и восстановление несущих конструкций зданий правила подключения'
+    },
+    {
+        date: '21.05.2021',
+        src: './assets/img/news/4.png',
+        text: 'Планируется принять новые Правила подключения (технологического присоединения) к системе'
+    },
+    {
+        date: '21.05.2021',
+        src: './assets/img/news/5.png',
+        text: 'Планируется принять новые Правила подключения (технологического присоединения) к системе'
+    },
+]
+
+
+fakeNewsData.forEach(el => {
+    return newsWrapper.innerHTML += `
+                        <div class="news-slider_slide news-slide">
+                            <div class="news-slider_image">
+                                <p class="newsDate">${el.date}</p>
+                                <img src="${el.src}" alt="">
+                                <div><p class="newsText">${el.text}</p></div>
+                            </div>
+                        </div>`
+})
+const swiperNews = new Swiper('.news-slider')
 
 
 
