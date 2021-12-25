@@ -24,7 +24,9 @@
             <ul class='info'>
                 <li class="info_item">info@rosneo.ru</li>
                 <li class="info_item">8(800)555-55-55</li>
-                <li class="info_item call">Обратный звонок</li>
+                <li class="info_item call">
+                    <button class="callback_btn">Обратный звонок</button>
+                </li>
             </ul>
             <div class='user_menu'>
                 <div><a class="user_menu-link" href="#"><img src="./assets/img/log_in.png" alt="logIn">ВОЙТИ</a></div>
@@ -39,21 +41,50 @@
     <!-- ------SLider------ -->
 
     <div class="container">
-        <section class="main_slider" id="slider">
-            <div class="slider_item" onclick="">
-                <h2 class="slider_title">Проектирование</h2>
-                <img class="project_img" src="./assets/img/project.png" alt="project">
-            </div>
-            <div class="slider_item">
-                <h2 class="slider_title">Строительство</h2>
-                <img class="build_img" src="./assets/img/build.png" alt="build">
+        <div class="accordion">
+            <ul class="accordion_items">
+                <li class="accordion_item project" tabindex="1">
+                    <h2 class="slider_title">Проектирование</h2>
+                    <h2 class="project-rotate">Проектирование</h2>
+                    <div class="hide_inner">
+                        <div class="hide_inner_text" href="#">
+                            <h2 class='slider_main_title'>Проектирование</h2>
+                            <p class="change_text">Мы развиваем и активно внедряем новые технологии при проектировании и
+                                разработке
+                                девелоперских проектов, предлагая рынку лучшие решения в своей сфере</p>
+                            <button class="change_button_project change_button">Подробней о проектировании</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion_item build" tabindex="2">
+                    <h2 class="slider_title">Строительство</h2>
+                    <h2 class="build-rotate">Строительство</h2>
+                    <div class="hide_inner">
+                        <div class="hide_inner_text" href="#">
+                            <h2 class='slider_main_title'>Строительство</h2>
+                            <p class="change_text">Мы развиваем и активно внедряем новые технологии при проектировании и
+                                разработке
+                                девелоперских проектов, предлагая рынку лучшие решения в своей сфере</p>
+                            <button class="change_button">Подробней о строительстве</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion_item exploitation" tabindex="3">
+                    <h2 class="slider_title">Эксплуатация</h2>
+                    <h2 class="exploitation-rotate">Строительство</h2>
+                    <div class="hide_inner">
+                        <div class="hide_inner_text" href="#">
+                            <h2 class='slider_main_title'>Эксплуатация</h2>
+                            <p class="change_text">Мы развиваем и активно внедряем новые технологии при проектировании и
+                                разработке
+                                девелоперских проектов, предлагая рынку лучшие решения в своей сфере</p>
+                            <button class="change_button">Подробней о эксплуатации</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
-            </div>
-            <div class="slider_item">
-                <h2 class="slider_title">Эксплуатация</h2>
-                <img class="exploitation_img" src="./assets/img/exploitation.png" alt="exploitation">
-            </div>
-        </section>
     </div>
 
     <!-- ------Open if project checked------ -->
@@ -426,11 +457,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="news-slider news-container">
-                    <div class="news-slider_wrapper news-wrapper">
+                <div class="news-slider swiper-container">
+                    <div class="news-slider_wrapper swiper-wrapper"></div>
+                    <div class="news-slider_wrapper_control">
+                        <div class="news-button-prev"><img src="./assets/img/news/prev.png" alt=""></div>
+                        <div class="news-pagination"></div>
+                        <div class="news-button-next"><img src="./assets/img/news/next.png" alt=""></div>
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-scrollbar"></div>
                 </div>
                 <button class="career_button">Смотреть все статьи</button>
             </div>
@@ -504,6 +537,39 @@
         </div>
     </div>
 </footer>
+
+<!--callback modal-->
+
+<div id="myModal" class="callback_modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal_inner">
+            <div class="modal-body">
+                <div class="question_form">
+                    <h3 class="modal_tittle">Обратный звонок</h3>
+                    <form>
+                        <div class="question_form-style">
+                            <input class="modal_input" type="text" pattern="[0-9]{10}"
+                                   placeholder="Ваше имя">
+                            <input class="modal_input" type="text">
+                            <input class="modal_input" type="email" placeholder="Ваш E-mail">
+                            <label for="file-upload" class="custom-file-upload">
+                                <img src="./assets/img/modal/add_file.png" alt=""> Прикрепить техническое задание
+                            </label>
+                            <input id="file-upload" type="file"/>
+                        </div>
+                        <input type="submit" class="modal_submit">
+                        <input class="question_checkbox" type="checkbox" id="cb3">
+                        <label class="question_label_text" for="cb3">Согласие на обработку персональных
+                            данных</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal_img"><img src="./assets/img/modal/modal_img.png" alt=""></div>
+    </div>
+</div>
+
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 
