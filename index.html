@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=API_KEY" type="text/javascript"></script>
     <title>Rosneo</title>
 </head>
 <body>
@@ -481,9 +480,8 @@
                 <div class="question_form">
                     <form>
                         <div class="question_form-style">
-                            <input class="question_phone_input" type="text" pattern="[0-9]{10}"
-                                   placeholder="Ваше имя">
-                            <input class="question_phone_input" type="text">
+                            <input class="question_phone_input" type="text" placeholder="Ваше имя">
+                            <input class="question_phone_input" data-mask="phone" placeholder="+7(" type="text">
                             <input class="question_phone_input" type="email" placeholder="Ваш E-mail">
                         </div>
                         <input class="question_checkbox" type="checkbox" id="cb2">
@@ -549,9 +547,8 @@
                     <h3 class="modal_tittle">Обратный звонок</h3>
                     <form>
                         <div class="question_form-style">
-                            <input class="modal_input" type="text" pattern="[0-9]{10}"
-                                   placeholder="Ваше имя">
-                            <input class="modal_input" type="text">
+                            <input class="modal_input" type="text" placeholder="Ваше имя">
+                            <input class="modal_input" data-mask="phone" type="text" placeholder="+7(">
                             <input class="modal_input" type="email" placeholder="Ваш E-mail">
                             <label for="file-upload" class="custom-file-upload">
                                 <img src="./assets/img/modal/add_file.png" alt=""> Прикрепить техническое задание
@@ -569,7 +566,8 @@
         <div class="modal_img"><img src="./assets/img/modal/modal_img.png" alt=""></div>
     </div>
 </div>
-
+<script src="./imask.js"></script> <!-- Подключаем плагин локально -->
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=API_KEY" type="text/javascript"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 

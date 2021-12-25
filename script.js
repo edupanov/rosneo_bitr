@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 const slider = document.querySelector('.main_slider')
 
 const fakeNewsData = [
@@ -78,6 +79,15 @@ const fakeNewsData = [
     },
 ]
 
+    const elements = document.querySelectorAll('[data-mask="phone"]') // ищем все поля с атрибутом data-mask="phone"
+    if (!elements) return // если таких нет, прекращаем выполнение функции
+    const phoneOptions = { // создаем объект параметров
+        mask: '+{7}(000)000-00-00' // задаем единственный параметр mask
+    }
+    elements.forEach(el => { // для каждого найденного поля с атрибутом [data-mask="phone"]
+        IMask(el, phoneOptions) // инициализируем плагин с установленными выше параметрами
+    })
+
 // -----Main page slider-----
 const project = document.querySelector('.project')
 const build = document.querySelector('.build')
@@ -122,7 +132,6 @@ document.addEventListener('mousemove', () => {
         exploitationRotate.style.display   = 'none'
     }
 });
-
 
 // -----Project slider-----
 
@@ -254,6 +263,8 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+})
 
 
 

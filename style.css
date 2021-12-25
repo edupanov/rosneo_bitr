@@ -1291,7 +1291,7 @@ width: 8vw;
     font-size: 1.6vw;
     width: 23vw;
     outline: none;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 2vw;
 }
 .modal_input:checked {
