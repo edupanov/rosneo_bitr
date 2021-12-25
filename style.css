@@ -304,7 +304,7 @@ main {
     height: 3.3vw;
 }
 .project_checked {
-    display: none;
+    display: block; /*-----CHANGE NONE on build project!!!!!!-----*/
 }/*-----Our company-----*/
 
 
@@ -321,6 +321,8 @@ main {
 .our_company_text {
     width: 59vw;
     font-size: 1.52vw;
+    color: #2d2d2deb;
+
 }
 
 .our_company_button {
@@ -905,7 +907,7 @@ width: 8vw;
     line-height: initial;
 }
 .social {
-    align-self: flex-end;
+    align-self: auto;
     width: 57%;
 }
 .social h3, .career h3{
@@ -940,7 +942,7 @@ width: 8vw;
     display: flex;
     justify-content: space-between;
 }
-.social_inner div img {
+.social_img img {
     position: relative;
     z-index: 4;
     width: 35.53vw;
@@ -1390,4 +1392,188 @@ input[type="file"] {
     .consult_text {
         margin-bottom: 10px;
     }
+}
+
+@media (max-width: 479px) {
+    .user_menu {
+        font-size: 0;
+    }
+    .logIn {
+        display: none;
+    }
+    .line {
+        display: none;
+    }
+    .our_company_button {
+        display: none;
+    }
+    .our_company_blocks{
+        flex-direction: column;
+    }
+    .our_company_text {
+        width: 100%;
+        font-size: 4.52vw;
+    }
+    .block01, .block02, .block03, .block04, .block05, .block06 {
+        display: flex;
+        height: 76vw;
+        max-height: 260px;
+        width: 93.8vw;
+        max-width: 320px;
+    }
+    .block01, .block03, .block05 {
+        background: #EEF2F6;
+    }
+    .block_title {
+        padding: 9.3vw 11.2vw;
+        font-size: 11.5vw;
+        margin: 0;
+    }
+    .block_text {
+        font-size: 5vw;
+    }
+    .block_footer img {
+        width: 17.2vw;
+        height: 17.2vw;
+    }
+    .our_company_title {
+        font-size: 8.2vw;
+    }
+    .standards_inner {
+        display: block;
+    }
+    .standards_item {
+        width: 90vw;
+        max-width: 320px;
+    }
+    .standards_title {
+        font-size: 5.54vw;
+    }
+    .standards_text {
+        font-size: 4.1vw;
+    }
+    .career {
+        padding: 11vw 1vw;
+    }
+    .career_inner {
+         display: block;
+        position: relative;
+        margin-top: 12.7vw;
+    }
+    .career_bg {
+        position: absolute;
+        background-color: #EEF2F6;
+        width: 84.7vw;
+        height: 221.7vw;
+    }
+    .career_inner div img {
+        top: -5vw;
+        width: 78.2vw;
+        left: 6vw;
+    }
+
+    .career_button {
+        padding: 2vw 28vw;
+        font-size: 4.1vw;
+    }
+    .career_text{
+        display: block;
+        position: relative;
+        top: 3vw;
+    }
+    .career p {
+        font-size: 4.1vw
+    }
+    .career_text div h4 {
+        font-size: 5.2vw;
+    }
+    .career_text div p {
+        font-size: 4.1vw;
+    }
+    .social {
+        width: 100%;
+    }
+    .social_inner {
+        flex-direction: column;
+        margin-top: 10vw;
+    }
+    .social_img {
+        order: -1;
+    }
+    .social_img img {
+        width: 84.3vw;
+        right: 2.4vw;
+    }
+    .social h3, .career h3 {
+        font-size: 10.2vw;
+    }
+    .social_text {
+        font-size: 4.1vw;
+    }
+    .question {
+        display: block;
+    }
+    .question_img {
+        text-align: end;
+    }
+    .question_img img {
+        width: 41.4vw;
+    }
+    .question_title {
+        position: relative;
+        width: 100%;
+        margin: 0 6vw;
+        bottom: 38vw;
+    }
+    .question_title h2 {
+        font-size: 13.3vw;
+        line-height: 9vw;
+        letter-spacing: 1.3vw;
+    }
+    .question_title p {
+        font-size: 5.65vw;
+    }
+    .question_phone_input {
+        font-size: 5vw;
+        width: 77vw;
+        margin-bottom: 9vw;
+    }
+    .question_form {
+        position: relative;
+        bottom: 30vw;
+    }
+    .question_form form div {
+        padding: 0 3vw;
+        text-align: center;
+    }
+    .question_button {
+        position: relative;
+        bottom: 8vw;
+        font-size: 4.1vw;
+        width: 88%;
+        margin: 0 6%;
+        height: 8.3vw;
+    }
+    .question_checkbox:checked + .question_label_text:after, .question_checkbox:not(:checked) + .question_label_text:after {
+        width: 3vw;
+        height: 3vw;
+    }
+    .question_checkbox:checked + .question_label_text:before, .question_checkbox:not(:checked) + .question_label_text:before {
+        width: 4vw;
+        height: 4vw;
+    }
+    .question_label_text {
+        font-size: 3.3vw;
+    }
+    .question_checkbox:checked + .question_label_text, .question_checkbox:not(:checked) + .question_label_text {
+        margin: 0 5%;
+        top: 12vw;
+    }
+    .footer_social .header_logo img {
+        width: 23vw;
+    }
+
+
+
+
 }

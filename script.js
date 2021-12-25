@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-const slider = document.querySelector('.main_slider')
 
 const fakeNewsData = [
     {
@@ -79,37 +78,39 @@ const fakeNewsData = [
     },
 ]
 
-    const elements = document.querySelectorAll('[data-mask="phone"]') // ищем все поля с атрибутом data-mask="phone"
-    if (!elements) return // если таких нет, прекращаем выполнение функции
+    const phoneElements = document.querySelectorAll('[data-mask="phone"]') // ищем все поля с атрибутом
+    // data-mask="phone"
+    if (!phoneElements) return // если таких нет, прекращаем выполнение функции
     const phoneOptions = { // создаем объект параметров
         mask: '+{7}(000)000-00-00' // задаем единственный параметр mask
     }
-    elements.forEach(el => { // для каждого найденного поля с атрибутом [data-mask="phone"]
+    phoneElements.forEach(el => {
         IMask(el, phoneOptions) // инициализируем плагин с установленными выше параметрами
     })
 
 // -----Main page slider-----
-const project = document.querySelector('.project')
-const build = document.querySelector('.build')
-const exploitation = document.querySelector('.exploitation')
+    const project = document.querySelector('.project')
+    const build = document.querySelector('.build')
+    const exploitation = document.querySelector('.exploitation')
 
-const projectRotate = document.querySelector('.project-rotate')
-const buildRotate = document.querySelector('.build-rotate')
-const exploitationRotate = document.querySelector('.exploitation-rotate')
+    const projectRotate = document.querySelector('.project-rotate')
+    const buildRotate = document.querySelector('.build-rotate')
+    const exploitationRotate = document.querySelector('.exploitation-rotate')
 
-const projectChecked = document.querySelector('.project_checked')
-const changeButtonProject = document.querySelector('.change_button_project')
-const accordionItems = document.querySelector('.accordion_items')
+    const projectChecked = document.querySelector('.project_checked')
+    const changeButtonProject = document.querySelector('.change_button_project')
+    const accordionItems = document.querySelector('.accordion_items')
 
-function isHover(e) {
-    return (e.parentElement.querySelector(':hover') === e);
-}
-document.addEventListener('mousemove', () => {
-    const hoveredProject = isHover(project);
-    const hoveredBuild = isHover(build);
-    const hoveredExploitation = isHover(exploitation);
-    if (hoveredProject) {
-        changeButtonProject.addEventListener('click', () => {
+    function isHover(e) {
+        return (e.parentElement.querySelector(':hover') === e);
+    }
+
+    document.addEventListener('mousemove', () => {
+        const hoveredProject = isHover(project);
+        const hoveredBuild = isHover(build);
+        const hoveredExploitation = isHover(exploitation);
+        if (hoveredProject) {
+            changeButtonProject.addEventListener('click', () => {
             projectChecked.style.display = 'block'
         })
         projectRotate.style.display = 'none'

@@ -28,7 +28,8 @@
                 </li>
             </ul>
             <div class='user_menu'>
-                <div><a class="user_menu-link" href="#"><img src="./assets/img/log_in.png" alt="logIn">ВОЙТИ</a></div>
+                <div><a class="user_menu-link logIn" href="#"><img src="./assets/img/log_in.png" alt="logIn">ВОЙТИ
+                </a></div>
                 <div class="line"></div>
                 <div><a class="user_menu-link" href="#"><img src="./assets/img/menu.png" alt="logIn">МЕНЮ</a></div>
             </div>
@@ -433,7 +434,7 @@
                         и от чего зависим, чем дорожим — это наши общие непреходящие ценности.
                     </p>
                 </div>
-                <div>
+                <div class="social_img">
                     <img src="./assets/img/career/social_bg.png" alt="">
                 </div>
             </div>
@@ -480,9 +481,15 @@
                 <div class="question_form">
                     <form>
                         <div class="question_form-style">
-                            <input class="question_phone_input" type="text" placeholder="Ваше имя">
-                            <input class="question_phone_input" data-mask="phone" placeholder="+7(" type="text">
-                            <input class="question_phone_input" type="email" placeholder="Ваш E-mail">
+                            <label>
+                                <input class="question_phone_input" type="text" placeholder="Ваше имя">
+                            </label>
+                            <label>
+                                <input class="question_phone_input" data-mask="phone" placeholder="+7(" type="text">
+                            </label>
+                            <label>
+                                <input class="question_phone_input" type="email" placeholder="Ваш E-mail">
+                            </label>
                         </div>
                         <input class="question_checkbox" type="checkbox" id="cb2">
                         <label class="question_label_text" for="cb2">Согласие на обработку персональных
@@ -547,9 +554,15 @@
                     <h3 class="modal_tittle">Обратный звонок</h3>
                     <form>
                         <div class="question_form-style">
-                            <input class="modal_input" type="text" placeholder="Ваше имя">
-                            <input class="modal_input" data-mask="phone" type="text" placeholder="+7(">
-                            <input class="modal_input" type="email" placeholder="Ваш E-mail">
+                            <label>
+                                <input class="modal_input" type="text" placeholder="Ваше имя">
+                            </label>
+                            <label>
+                                <input class="modal_input" data-mask="phone" type="text" placeholder="+7(">
+                            </label>
+                            <label>
+                                <input class="modal_input" type="email" placeholder="Ваш E-mail">
+                            </label>
                             <label for="file-upload" class="custom-file-upload">
                                 <img src="./assets/img/modal/add_file.png" alt=""> Прикрепить техническое задание
                             </label>
