@@ -77,6 +77,7 @@ const fakeNewsData = [
         text: 'Планируется принять новые Правила подключения (технологического присоединения) к системе'
     },
 ]
+    const aaa = document.querySelector('.hide_input')
 
     const phoneElements = document.querySelectorAll('[data-mask="phone"]') // ищем все поля с атрибутом
     // data-mask="phone"
@@ -211,7 +212,7 @@ function init() {
         hintContent: 'Rosneo object'
     });
 
-    const swiperMap = new Swiper('.map-slider');
+    // const swiperMap = new Swiper('.map-slider');
     // Добавим метку на карту.
     myMap.geoObjects.add(placemark);
     // Откроем балун на метке.

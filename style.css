@@ -168,7 +168,6 @@ header {
 }
 
 
-
 /*-----MAIN SLIDER-----*/
 main {
     padding: 0px 15px;
@@ -178,12 +177,18 @@ main {
 main {
     padding: 0px 15px;
 }
+
+.hide_input {
+    display: none;
+}
+
 .accordion {
     width: 100%;
     max-width: 1900px;
     overflow: hidden;
     margin: 50px auto;
 }
+
 .accordion_items {
     width: 100%;
     display: flex;
@@ -236,31 +241,36 @@ main {
     background-image: url('./assets/img/exploitation_full.png');
 }
 
-.accordion_items:hover .accordion_item, .accordion_items:focus-within .accordion_item {
+.accordion_items:hover .accordion_item {
     width: 10%;
 }
 
 .accordion_items:hover .slider_title {
     display: none;
 }
+
 .accordion_item:focus {
     outline: none;
 }
-.accordion_items:hover .accordion_item:hover, .accordion_items .accordion_item:focus, .accordion_items:focus-within .accordion_item:focus {
+
+.accordion_item:focus {
     width: 80%;
 }
 
-.accordion_items:hover .accordion_item:hover .hide_inner_text *, .accordion_items .accordion_item:focus .hide_inner_text *, .accordion_items:focus-within .accordion_item:focus .hide_inner_text * {
+.accordion_items:focus .accordion_item:focus .hide_inner_text * {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
 }
+
 .accordion_items:hover .accordion_item {
     width: 10% !important;
 }
-.accordion_items:hover .accordion_item .hide_inner_text * {
+
+.accordion_items:hover .hide_inner_text * {
     opacity: 0 !important;
 }
+
 .accordion_items:hover .accordion_item:hover {
     width: 80% !important;
 }
@@ -339,6 +349,8 @@ main {
 }
 
 .change_button {
+    cursor: pointer;
+    padding: 1vw;
     font-size: 1.3vw;
     font-style: normal;
     font-weight: normal;
@@ -348,6 +360,11 @@ main {
     width: 20vw;
     height: 3.3vw;
 }
+
+.change_button:hover {
+    color: #ffffff;
+}
+
 .project_checked {
     display: block; /*-----CHANGE NONE on build project!!!!!!-----*/
 }/*-----Our company-----*/
@@ -372,12 +389,17 @@ main {
 
 .our_company_button {
     position: absolute;
+    cursor: pointer;
     right: 0;
     color: #ffffff;
     background: radial-gradient(122.69% 531.67% at -11.54% -45%, #2998FF 0%, #29F2FF 100%);
-    padding: 15px 20px;
-    font-size: 18px;
+    padding: 1.7vw 3vw;
+    font-size: 1.9vw;
     bottom: 24vw;
+}
+
+.our_company_button:hover {
+    color: #ffffff;
 }
 
 .our_company_blocks {
@@ -502,9 +524,18 @@ main {
     font-size: 3.3vw;
     letter-spacing: 4px;
 }
+.consult_title_hide {
+    display: none;
+}
 .consult_text {
     font-size: 1.5vw;
     margin-bottom: 40px;
+}
+.consult_text_hide {
+    display: none;
+}
+.consult_phone_manager {
+    display: none;
 }
 
 .consult_form-style {
@@ -694,16 +725,22 @@ main {
     justify-content: space-between;
     align-items: center;
 }
+
 .our_projects_button {
+    cursor: pointer;
     color: #ffffff;
     background: radial-gradient(122.69% 531.67% at -11.54% -45%, #2998FF 0%, #29F2FF 100%);
-    padding: 15px 20px;
-    font-size: 18px;
-    height: 50px;
+    padding: 0.8vw 1vw;
+    font-size: 1vw;
 }
+
+.our_projects_button:hover {
+    color: #ffffff;
+}
+
 .image-slider {
-position: relative;
-overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 .image-slider_wrapper {
     display: flex;
@@ -966,16 +1003,24 @@ width: 8vw;
     align-self: auto;
     width: 57%;
 }
-.social h3, .career h3{
+.social h3, .career h3 {
     font-size: 4.2vw;
+    position: relative;
+    z-index: 8;
 }
+
 .career_button {
+    cursor: pointer;
     position: relative;
     right: 0;
     color: #ffffff;
     background: radial-gradient(122.69% 531.67% at -11.54% -45%, #2998FF 0%, #29F2FF 100%);
     padding: 1vw 1vw;
     font-size: 1.1vw;
+}
+
+.career_button:hover {
+    color: #ffffff;
 }
 
 .career_text {
@@ -1258,6 +1303,8 @@ width: 8vw;
 /*-----Footer-----*/
 .footer_inner {
     font-size: 0.84vw;
+    width: 95vw;
+    margin: 0 auto;
 }
 
 .footer_social, .footer_company_links, .footer_bottom{
@@ -1303,8 +1350,13 @@ width: 8vw;
 
 /* -----Callback modal----- */
 .callback_btn {
-   }
+    cursor: pointer;
+    color: #008FF4;
+}
 
+.callback_btn:hover {
+    color: #008FF4;
+}
 
 .callback_modal {
     display: none; /* Hidden by default */
@@ -1485,45 +1537,140 @@ input[type="file"] {
         font-size: 11.5vw;
         margin: 0;
     }
+
     .block_text {
         font-size: 5vw;
     }
+
     .block_footer img {
         width: 17.2vw;
         height: 17.2vw;
     }
+
+    .logo_consult {
+        display: none;
+    }
+
+    .consult {
+        margin-top: 12.7vw;
+        position: relative;
+        height: 120vw;
+        max-height: 575px;
+    }
+    .consult_background {
+        height: 100%;
+    }
+    .consult_inner {
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 2vw 2vw;
+    }
+    .consult_title {
+        display: none;
+    }
+    .consult_title_hide {
+        display: block;
+        font-size: 7.2vw;
+        letter-spacing: 4px;
+    }
+    .consult_text {
+        font-size: 4.5vw;
+        margin-bottom: 12vw;
+    }
+    .consult_text_hide {
+        display: block;
+        font-size: 4.5vw;
+        margin-bottom: 40px;
+    }
+    .consult_phone_manager {
+        display: block;
+        font-size: 8vw;
+        color: #00FEEF;
+    }
+    .consult_form-style {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .consult_phone_input {
+        font-size: 5vw;
+        width: 90%;
+    }
+    .consult_checkbox:checked + .consult_label_text:before, .consult_checkbox:not(:checked) + .consult_label_text:before {
+        width: 4vw;
+        height: 4vw;
+    }
+    .consult_checkbox:checked + .consult_label_text:after, .consult_checkbox:not(:checked) + .consult_label_text:after {
+        left: 1px;
+        width: 3vw;
+        height: 3vw;
+    }
     .our_company_title {
         font-size: 8.2vw;
     }
+    .consult_button {
+        font-size: 4.1vw;
+        width: 90%;
+        height: 9.3vw;
+        margin-top: 4vw;
+    }
+    .consult_label_text {
+        font-size: 3vw;
+    }
+
     .standards_inner {
         display: block;
     }
+
     .standards_item {
         width: 90vw;
         max-width: 320px;
     }
+
     .standards_title {
         font-size: 5.54vw;
     }
+
     .standards_text {
         font-size: 4.1vw;
     }
-    .slider-button-next img {display: none}
+
+    .slider-button-next img {
+        display: none
+    }
+
     .project_pagination span {
         display: block;
     }
-    .career {
-        padding: 11vw 1vw;
+
+    .image-slider_image p {
+        z-index: 3;
+        position: absolute;
+        color: #ffff;
+        /* max-width: 527px; */
+        width: 86vw;
+        font-size: 4.9vw;
+        bottom: 0;
+        /* margin: 0 0 2vw 1vw; */
+        padding: 1vw 2vw;
+        text-align: center;
     }
+
+    .career {
+        padding: 11vw 7vw;
+    }
+
     .career_inner {
-         display: block;
+        display: block;
         position: relative;
         margin-top: 12.7vw;
     }
+
     .career_bg {
         position: absolute;
         background-color: #EEF2F6;
-        width: 84.7vw;
+        width: 91.7vw;
         height: 221.7vw;
     }
     .career_inner div img {
@@ -1632,8 +1779,16 @@ input[type="file"] {
     .footer_social .header_logo img {
         width: 23vw;
     }
+}
 
-
-
-
+@media (max-width: 379px) {
+    .consult {
+        height: 124vw;
+        max-height: 470px;
+    }
+}
+@media (max-width: 269px) {
+    .consult {
+        height: 140vw;
+    }
 }
