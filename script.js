@@ -149,7 +149,26 @@ const swiperProjects = new Swiper('.image-slider', {
     // количество пролистываемых слайдов
     // slidesPerGroup: 2,
     // бесконечный слайдер
-    loop: true
+    loop: true,
+    breakpoints: {
+        120: {
+            slidesPerView: 1,
+            navigation: {nextEl: ''},
+            pagination: {
+                el: '.news-pagination',
+                clickable: true
+            },
+            // spaceBetween: 0,
+            // allowTouchMove: true,
+        },
+        480: {
+            slidesPerView: 2.5,
+            // spaceBetween: 0,
+            // allowTouchMove: true,
+        }
+
+    }
+
 })
 
 // Yandex map
