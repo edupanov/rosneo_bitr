@@ -675,6 +675,12 @@ main {
     /*flex-grow: 1;*/
     width: 45.16%;
 }
+.project_pagination span {
+    display: none;
+    width: 4vw;
+    height: 0.5vw;
+    border-radius: 0;
+}
 
 /*-----Our projects slider-----*/
 
@@ -735,6 +741,11 @@ z-index: 5;
 }
 .slider-button-next img {
 width: 8vw;
+}
+
+.project_pagination {
+    display: flex;
+    justify-content: center;
 }
 
 /*-----Height corporate standards-----*/
@@ -1496,6 +1507,10 @@ input[type="file"] {
     }
     .standards_text {
         font-size: 4.1vw;
+    }
+    .slider-button-next img {display: none}
+    .project_pagination span {
+        display: block;
     }
     .career {
         padding: 11vw 1vw;

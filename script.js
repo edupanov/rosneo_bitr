@@ -140,6 +140,10 @@ const swiperProjects = new Swiper('.image-slider', {
     navigation: {
         nextEl: '.slider-button-next'
     },
+    pagination: {
+        el: '.project_pagination',
+        clickable: true
+    },
     // отключает свайпы
     simulateTouch: false,
     // количество показанных слайдов (можно не целые числа)
@@ -154,17 +158,9 @@ const swiperProjects = new Swiper('.image-slider', {
         120: {
             slidesPerView: 1,
             navigation: {nextEl: ''},
-            pagination: {
-                el: '.news-pagination',
-                clickable: true
-            },
-            // spaceBetween: 0,
-            // allowTouchMove: true,
         },
         480: {
             slidesPerView: 2.5,
-            // spaceBetween: 0,
-            // allowTouchMove: true,
         }
 
     }
