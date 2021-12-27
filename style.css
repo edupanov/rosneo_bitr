@@ -1513,6 +1513,7 @@ input[type="file"] {
     background: radial-gradient(122.69% 531.67% at -11.54% -45%, #2998FF 0%, #29F2FF 100%);
     width: 11vw;
     height: 3.3vw;
+    border: none;
 }
 .close {
     position: absolute;
