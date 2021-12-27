@@ -90,6 +90,7 @@ const fakeNewsData = [
     })
 
 // -----Main page slider-----
+
     const project = document.querySelector('.project')
     const build = document.querySelector('.build')
     const exploitation = document.querySelector('.exploitation')
@@ -100,11 +101,16 @@ const fakeNewsData = [
 
     const projectChecked = document.querySelector('.project_checked')
     const changeButtonProject = document.querySelector('.change_button_project')
+    const accordionItem = document.querySelector('.accordion_item')
     const accordionItems = document.querySelector('.accordion_items')
 
     function isHover(e) {
         return (e.parentElement.querySelector(':hover') === e);
     }
+
+    project.addEventListener('click', ()=>{
+
+    })
 
     document.addEventListener('mousemove', () => {
         const hoveredProject = isHover(project);
@@ -135,6 +141,39 @@ const fakeNewsData = [
     }
 });
 
+
+    // -----mobile main slider
+
+    const swiperMainMobile = new Swiper('.main-mobile-slider', {
+        navigation: {
+            nextEl: '.slider-button-next'
+        },
+        pagination: {
+            el: '.project_pagination',
+            clickable: true
+        },
+        // отключает свайпы
+        simulateTouch: false,
+        // количество показанных слайдов (можно не целые числа)
+        slidesPerView: 2.5,
+        // отключает сайдер при малом кол-ве картинок
+        watchOverFlow: true,
+        // количество пролистываемых слайдов
+        // slidesPerGroup: 2,
+        // бесконечный слайдер
+        loop: true,
+        breakpoints: {
+            120: {
+                slidesPerView: 1,
+                navigation: {nextEl: ''},
+            },
+            480: {
+                slidesPerView: 2.5,
+            }
+        }
+
+    })
+
 // -----Project slider-----
 
 const swiperProjects = new Swiper('.image-slider', {
@@ -163,7 +202,6 @@ const swiperProjects = new Swiper('.image-slider', {
         480: {
             slidesPerView: 2.5,
         }
-
     }
 
 })
@@ -253,8 +291,18 @@ const swiperNews = new Swiper('.news-slider', {
         el: '.news-pagination',
         clickable: true
     },
+
     // бесконечный слайдер
-    loop: false
+    loop: false,
+    breakpoints: {
+        120: {
+            slidesPerView: 1,
+            navigation: {nextEl: ''},
+        },
+        480: {
+            slidesPerView: 2.5,
+        }
+    }
 })
 
 

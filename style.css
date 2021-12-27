@@ -251,10 +251,10 @@ main {
 
 .accordion_item:focus {
     outline: none;
+    width: 80%;
 }
 
 .accordion_item:focus {
-    width: 80%;
 }
 
 .accordion_items:focus .accordion_item:focus .hide_inner_text * {
@@ -393,8 +393,8 @@ main {
     right: 0;
     color: #ffffff;
     background: radial-gradient(122.69% 531.67% at -11.54% -45%, #2998FF 0%, #29F2FF 100%);
-    padding: 1.7vw 3vw;
-    font-size: 1.9vw;
+    padding: 0.8vw 1vw;
+    font-size: 1vw;
     bottom: 24vw;
 }
 
@@ -565,6 +565,7 @@ main {
     background: radial-gradient(122.69% 531.67% at -11.54% -45%, #2998FF 0%, #29F2FF 100%);
     width: 11vw;
     height: 3.3vw;
+    border: none;
 }
 
 .consult_label_text {
@@ -785,6 +786,15 @@ width: 8vw;
     justify-content: center;
 }
 
+.our_projects_button-mobile {
+    text-align: center;
+    display: none;
+    cursor: pointer;
+    color: #ffffff;
+    background: radial-gradient(122.69% 531.67% at -11.54% -45%, #2998FF 0%, #29F2FF 100%);
+
+}
+
 /*-----Height corporate standards-----*/
 .standards{
     margin-top: 12.7vw;
@@ -839,6 +849,15 @@ width: 8vw;
     margin-bottom: 5vw;
     max-width: 1311px;
 }
+
+.city_list-mobile {
+    display: none;
+    width: 80%;
+    margin: 0 7vw 3vw;
+    border: 1px solid #F1F0F1;
+    color: #1A181E;
+}
+
 .city_item {
     cursor: pointer;
     display: flex;
@@ -1229,6 +1248,7 @@ width: 8vw;
     background: radial-gradient(122.69% 531.67% at -11.54% -45%, #2998FF 0%, #29F2FF 100%);
     width: 11vw;
     height: 3.3vw;
+    border: none;
 }
 
 .question_label_text {
@@ -1345,6 +1365,12 @@ width: 8vw;
 .faq_img img{
     position: relative;
     top: 0.3vw;
+}
+.footer_hide {
+    display: none;
+}
+.footer_contact_hide {
+    display: none;
 }
 
 
@@ -1648,13 +1674,45 @@ input[type="file"] {
         z-index: 3;
         position: absolute;
         color: #ffff;
-        /* max-width: 527px; */
         width: 86vw;
         font-size: 4.9vw;
         bottom: 0;
-        /* margin: 0 0 2vw 1vw; */
         padding: 1vw 2vw;
         text-align: center;
+    }
+    .our_projects_button {
+        display: none;
+    }
+    .our_projects_button-mobile {
+        display: block;
+        padding: 3vw 1vw;
+        font-size: 3vw;
+        position: relative;
+        top: 4vw;
+    }
+
+    .city_item {
+        display: none;
+    }
+    .city_list:hover .city_item {
+        display: block;
+    }
+    .city_list-mobile {
+        display: block;
+    }
+    .our_progress_line {
+        display: none;
+    }
+    .our_progress_title {
+        font-size: 8.2vw;
+    }
+    .our_objects_text {
+        font-size: 5.9vw;
+        padding: 0 7vw;
+    }
+    #map {
+        width: 100%;
+        height: 320px;
     }
 
     .career {
@@ -1680,8 +1738,8 @@ input[type="file"] {
     }
 
     .career_button {
-        padding: 2vw 28vw;
-        font-size: 4.1vw;
+        padding: 2vw 31vw;
+        font-size: 2.2vw;
     }
     .career_text{
         display: block;
@@ -1716,6 +1774,45 @@ input[type="file"] {
     }
     .social_text {
         font-size: 4.1vw;
+    }
+    .news-slider_wrapper_control {
+        margin-bottom: 4vw;
+    }
+    .news-button-next, .news-button-prev {
+        display: none;
+    }
+    .news-pagination span{
+
+    }
+    .news-slider_wrapper_control .swiper-pagination-bullet {
+        background-color: #29afff;
+        width: 4vw;
+        height: 0.5vw;
+        border-radius: 0;
+    }
+
+    .news_line {
+        display: none;
+    }
+    .news_title_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .news_filters {
+        width: 82vw;
+        height: 5vw;
+        margin-bottom: 2vw;
+    }
+    .newsDate {
+        font-size: 2.27vw;
+    }
+    .newsText {
+        font-size: 3.5vw;
+    }
+    .filters_button {
+        font-size: 2.8vw;
+        padding: 1px 3px;
     }
     .question {
         display: block;
@@ -1779,12 +1876,80 @@ input[type="file"] {
     .footer_social .header_logo img {
         width: 23vw;
     }
+    .privacy_policy {
+        display: none;
+    }
+    .footer_inner {
+        padding: 0 4vw;
+    }
+    .footer_social-links_items a img {
+        width: 6vw;
+    }
+    .footer_company_links, .footer_bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+       .footer_bottom-items {
+        padding-right: 1vw;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        border-top: 1px solid #F1F0F1;
+        border-bottom: 1px solid #F1F0F1;
+    }
+    .footer_top {
+        display: none;
+    }
+    .footer_link-item {
+        background-color: #ffffff;
+        font-size: 3vw;
+        padding: 1vw;
+    }
+    .faq_img {
+        width: 100%;
+        font-size: 2.5vw;
+        color: #666;
+    }
+    .faq_img img {
+        top: 1vw;
+        width: 4vw;
+    }
+    .footer_hide {
+        display: block;
+        font-size: 3vw;
+        width: 100%;
+        color: #666;
+        background-color: #EEF2F6;
+    }
+
+    .footer_contact_hide {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .footer_contact_withUs {
+        font-size: 3vw;
+        color: #666;
+        padding: 1vw;
+    }
+    .footer_contact_withUs-tel {
+        font-size: 4vw;
+        color: #25A4FF;
+    }
 }
 
 @media (max-width: 379px) {
     .consult {
         height: 124vw;
         max-height: 470px;
+    }
+}
+@media (max-width: 292px) {
+    .career_button {
+        padding: 2vw 33vw;
     }
 }
 @media (max-width: 269px) {
