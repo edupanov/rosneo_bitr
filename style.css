@@ -171,33 +171,31 @@ header {
 
 
 
-
-
-.main-mobile-slider {
+.main-mobile-slider, .our_progress-slider {
     display: none;
     position: relative;
     overflow: hidden;
 }
-.main-mobile-slider_wrapper {
+.main-mobile-slider_wrapper, .our_progress-slider_wrapper {
     display: flex;
 }
-.main-mobile-slider_slide {
+.main-mobile-slider_slide, .our_progress-slider_slide  {
     align-self: center;
 
 }
-.main-mobile-slider_image {
+.main-mobile-slider_image, .our_progress-slider_image {
     text-align: center;
     width: fit-content;
 
 }
-.main-mobile-slider_image p {
+.main-mobile-slider_image p, .our_progress-slider_image p {
     position: absolute;
     color: #ffff;
     font-size: 3.2vw;
     bottom: 13vw;
     text-align: center;
 }
-.main-mobile-slider_image h2 {
+.main-mobile-slider_image h2, .our_progress-slider_image h2 {
 position: absolute;
 color: #ffff;
     font-size: 8vw;
@@ -210,38 +208,6 @@ text-align: center;
 max-width: 100%;
 z-index: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*-----MAIN SLIDER-----*/
 main {
@@ -1741,7 +1707,12 @@ input[type="file"] {
     .consult_label_text {
         font-size: 3vw;
     }
-
+    .our_progress-slider{
+        display: block;
+    }
+    .our_progress_inner {
+        display: none;
+    }
     .standards_inner {
         display: block;
     }

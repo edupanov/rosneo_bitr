@@ -171,6 +171,34 @@ const fakeNewsData = [
 
     })
 
+    const swiperOurProgressMobile = new Swiper('.our_progress-slider', {
+        navigation: {
+            nextEl: ''
+        },
+        pagination: {
+            el: '.project_pagination',
+            clickable: true
+        },
+        // отключает свайпы
+        simulateTouch: true,
+        // количество показанных слайдов (можно не целые числа)
+        slidesPerView: 1,
+        // отключает сайдер при малом кол-ве картинок
+        watchOverFlow: true,
+        // количество пролистываемых слайдов
+        // slidesPerGroup: 2,
+        // бесконечный слайдер
+        loop: true,
+        breakpoints: {
+            120: {
+                slidesPerView: 1.1,
+                navigation: {nextEl: ''},
+            },
+        }
+
+    })
+
+
 // -----Project slider-----
 
 const swiperProjects = new Swiper('.image-slider', {
