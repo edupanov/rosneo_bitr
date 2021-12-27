@@ -168,10 +168,80 @@ header {
 }
 
 
-/*-----MAIN SLIDER-----*/
-main {
-    padding: 0px 15px;
+
+
+
+
+
+.main-mobile-slider {
+    display: none;
+    position: relative;
+    overflow: hidden;
 }
+.main-mobile-slider_wrapper {
+    display: flex;
+}
+.main-mobile-slider_slide {
+    align-self: center;
+
+}
+.main-mobile-slider_image {
+    text-align: center;
+    width: fit-content;
+
+}
+.main-mobile-slider_image p {
+    position: absolute;
+    color: #ffff;
+    font-size: 3.2vw;
+    bottom: 13vw;
+    text-align: center;
+}
+.main-mobile-slider_image h2 {
+position: absolute;
+color: #ffff;
+    font-size: 8vw;
+    bottom: 25vw;
+width: 100%;
+text-align: center;
+}
+
+.main-mobile-slider_image img {
+max-width: 100%;
+z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-----MAIN SLIDER-----*/
 main {
@@ -1192,8 +1262,9 @@ width: 8vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: url("./assets/img/question/questiom_bg.png");
+    background: url(./assets/img/question/questiom_bg.png) no-repeat;
     margin-top: 14.5vw;
+    background-size: cover;
 }
 .question_title {
     width: 30.5vw;
@@ -1529,6 +1600,26 @@ input[type="file"] {
 }
 
 @media (max-width: 479px) {
+    header {
+        position: absolute;
+        background-color: #ffff;
+        width: 90%;
+        z-index: 4;
+        margin-left: 5vw;
+        margin-top: 5vw;
+        padding: 0;
+    }
+    .header_logo img{
+        width: 17vw;
+    }
+    .change_button {
+        position: absolute;
+        left: 9%;
+        top: 83%;
+        width: 80%;
+        height: 8%;
+        font-size: 2vw;
+    }
     .user_menu {
         font-size: 0;
     }
@@ -1537,6 +1628,12 @@ input[type="file"] {
     }
     .line {
         display: none;
+    }
+    .accordion {
+        display: none;
+    }
+    .main-mobile-slider {
+        display: block;
     }
     .our_company_button {
         display: none;

@@ -146,16 +146,16 @@ const fakeNewsData = [
 
     const swiperMainMobile = new Swiper('.main-mobile-slider', {
         navigation: {
-            nextEl: '.slider-button-next'
+            nextEl: ''
         },
         pagination: {
             el: '.project_pagination',
             clickable: true
         },
         // отключает свайпы
-        simulateTouch: false,
+        simulateTouch: true,
         // количество показанных слайдов (можно не целые числа)
-        slidesPerView: 2.5,
+        slidesPerView: 1,
         // отключает сайдер при малом кол-ве картинок
         watchOverFlow: true,
         // количество пролистываемых слайдов
@@ -167,9 +167,6 @@ const fakeNewsData = [
                 slidesPerView: 1,
                 navigation: {nextEl: ''},
             },
-            480: {
-                slidesPerView: 2.5,
-            }
         }
 
     })
