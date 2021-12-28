@@ -1,5 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    (function(){
+        $(".flex-slide").each(function(){
+            $(this).hover(function(){
+                $(this).find('.flex-title').css({
+                    transform: 'rotate(0deg)',
+                    top: '25%'
+                });
+                $(this).find('.flex-about').css({
+                    opacity: '1'
+                });
+            }, function(){
+                $(this).find('.flex-title').css({
+                    transform: 'rotate(0deg)',
+                    top: '60%'
+                });
+                $(this).find('.flex-about').css({
+                    opacity: '0'
+                });
+            })
+        });
+    })();
+
 const fakeNewsData = [
     {
         date: '21.05.2021',
@@ -107,10 +129,6 @@ const fakeNewsData = [
     function isHover(e) {
         return (e.parentElement.querySelector(':hover') === e);
     }
-
-    project.addEventListener('click', ()=>{
-
-    })
 
     document.addEventListener('mousemove', () => {
         const hoveredProject = isHover(project);
@@ -330,7 +348,6 @@ const swiperNews = new Swiper('.news-slider', {
     }
 })
 
-
 // ------Callbck modal ------
 
 const modal = document.querySelector('#myModal');
@@ -354,7 +371,14 @@ window.onclick = function (event) {
     }
 }
 
+
+
+
+
 })
+
+
+
 
 
 
