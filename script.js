@@ -3,21 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
         title: true
     });
 
-   document.querySelector('.burger').addEventListener('click', () => {
-        document.querySelector('.slinky-menu').classList.add('activeBurger')
-    })
-    document.querySelector('.burgerClose').addEventListener('click', ()=>{
-        document.querySelector('.slinky-menu').classList.remove('activeBurger')
-
-    })
-
-
- document.querySelector('.callback_btn').addEventListener('click', ()=>{
-     document.querySelector('.callback_modal').style.display = 'block'
- })
-    document.querySelector('.close').addEventListener('click', ()=>{
-        document.querySelector('.callback_modal').style.display = 'none'
-    })
     (function () {
         $(".flex-slide").each(function () {
             $(this).hover(function () {
@@ -387,6 +372,21 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+    document.querySelector('.burger').addEventListener('click', () => {
+        document.querySelector('.slinky-menu').classList.add('activeBurger')
+    })
+    document.querySelector('.burgerClose').addEventListener('click', ()=>{
+        document.querySelector('.slinky-menu').classList.remove('activeBurger')
+    })
+
+
+    document.querySelector('.callback_btn').addEventListener('click', ()=>{
+        document.querySelector('.callback_modal').style.display = 'block'
+    })
+    document.querySelector('.close').addEventListener('click', ()=>{
+        document.querySelector('.callback_modal').style.display = 'none'
+    })
 
 
 
