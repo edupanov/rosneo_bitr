@@ -1109,10 +1109,16 @@ background-color: #ffffff;
     z-index: 3;
     color: #000000;
     max-width: 527px;
+    height: 8vw;
     font-size: 1.5vw;
     bottom: 0;
-    margin: 1.8vw 1.6vw 2.8vw 1.6vw;
     text-align: initial;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0.8vw;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
 .news-slider_image img {
     max-width: 100%;
@@ -1807,6 +1813,7 @@ input[type="file"] {
     }
     .newsText {
         font-size: 3.5vw;
+        height: 14vw;
     }
     .filters_button {
         font-size: 2.8vw;
