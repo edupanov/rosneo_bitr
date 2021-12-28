@@ -284,7 +284,7 @@ function init() {
                 </div>
                 <div class="map_control">
                         <p class="map_text">Капитальный ремонт офисного здания ПАО "Банк УралСиб" Филиал южный г.Краснодар</p>
-                        <div class="map_button_img"><img src="./assets/img/map/map_button.png" alt=""></div>
+                        <div class="map_button_img"><img src="../assets/img/map/map_button.png" alt=""></div>
                 </div>
                 <div class="map-pagination"></div>
                 <div class="map-scrollbar"></div>

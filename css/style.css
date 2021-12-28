@@ -1,4 +1,4 @@
-@import "assets/fonts/fonts.css";
+@import "../assets/fonts/fonts.css";
 
 body {
     font-family: Circe-Regular, sans-serif;
@@ -282,19 +282,19 @@ main {
     font-size: 6vw;
 }
 .project {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/img/project_full.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/project_full.png);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
 .build {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/img/build_full.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/img/build_full.png');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
 .exploitation {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/img/exploitation_full.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/img/exploitation_full.png');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -404,17 +404,17 @@ main {
 }
 
 .block02 {
-    background: url("./assets/img/block02.png") no-repeat;
+    background: url("../assets/img/block02.png") no-repeat;
     background-size: 100%;
 }
 
 .block04 {
-    background: url("./assets/img/block04.png") no-repeat;
+    background: url("../assets/img/block04.png") no-repeat;
     background-size: 100%;
 }
 
 .block06 {
-    background: url("./assets/img/block06.png") no-repeat;
+    background: url("../assets/img/block06.png") no-repeat;
     background-size: 100%;
 }
 
@@ -459,7 +459,7 @@ main {
 
 .consult_background {
     height: 30.5vw;
-    background: url("./assets/img/bacground_consult.png") no-repeat;
+    background: url("../assets/img/bacground_consult.png") no-repeat;
     z-index: 1;
     display: flex;
 }
@@ -1145,7 +1145,7 @@ width: 8vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: url(./assets/img/question/questiom_bg.png) no-repeat;
+    background: url(../assets/img/question/questiom_bg.png) no-repeat;
     margin-top: 14.5vw;
     background-size: cover;
 }
