@@ -345,7 +345,7 @@ const swiperNews = new Swiper('.news-slider', {
             navigation: {nextEl: ''},
         },
         480: {
-            slidesPerView: 2.5,
+            slidesPerView: 4.2,
         }
     }
 })

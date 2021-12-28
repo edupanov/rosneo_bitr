@@ -972,7 +972,7 @@ width: 8vw;
     line-height: initial;
 }
 .social {
-    align-self: auto;
+    align-self: center;
     width: 57%;
 }
 .social h3, .career h3 {
@@ -987,7 +987,7 @@ width: 8vw;
     right: 0;
     color: #ffffff;
     background: radial-gradient(122.69% 531.67% at -11.54% -45%, #2998FF 0%, #29F2FF 100%);
-    padding: 1vw 1vw;
+    padding: 1vw 3vw;
     font-size: 1.1vw;
 }
 
@@ -1037,7 +1037,9 @@ width: 8vw;
 .news{
     margin-top: 8vw;
 }
-
+.news_bg {
+    background-color: #EEF2F6;
+}
 .news_title_inner {
     display: flex;
     position: relative;
@@ -1093,7 +1095,7 @@ width: 8vw;
 .news-slider_image {
     text-align: center;
     width: fit-content;
-
+background-color: #ffffff;
 }
 .newsDate {
     position: absolute;
@@ -1297,6 +1299,9 @@ width: 8vw;
 .footer_social-links {
     display: flex;
 }
+.footer_social-links_items a img {
+    width: 3vw;
+}
 .privacy_policy{
     color: #C1C1C1;
     border-bottom: 1px solid #C1C1C1;
@@ -1312,6 +1317,7 @@ width: 8vw;
 .footer_link-item {
     position: relative;
     background-color: #FAFBFC;
+    padding: 0 0.4vw;
 }
 .faq_img {
     margin-left: 1vw;
