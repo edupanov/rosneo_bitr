@@ -1481,6 +1481,9 @@ input[type="file"] {
     .consult_text {
         margin-bottom: 10px;
     }
+    .logIn {
+        display: none;
+    }
 }
 
 @media (max-width: 479px) {
@@ -1495,6 +1498,9 @@ input[type="file"] {
     }
     .header_logo img{
         width: 17vw;
+    }
+    .flex-container {
+        display: none;
     }
     .change_button {
         position: absolute;

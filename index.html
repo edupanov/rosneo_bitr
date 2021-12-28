@@ -7,8 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="./css/slinky.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
     <title>Rosneo</title>
 </head>
 <body>
@@ -62,10 +65,115 @@
                 <div><a class="user_menu-link logIn" href="#"><img src="./assets/img/log_in.png" alt="logIn">ВОЙТИ
                 </a></div>
                 <div class="line"></div>
-                <div><a class="user_menu-link" href="#"><img src="./assets/img/menu.png" alt="logIn">МЕНЮ</a></div>
+                <div class="burger"><a class="user_menu-link" href="#"><img src="./assets/img/menu.png" alt="logIn">МЕНЮ
+                </a></div>
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="js-menu">
+            <ul>
+                <li class="burger_header">
+                    <a class="burger_title" href="#">Меню</a>
+                    <div>
+                        <a class="user_menu-link user_menu-link-burger logIn" href="#"><img
+                                src="./assets/img/log_in.png" alt="logIn">ВОЙТИ
+                        </a>
+                        <span class="line"></span>
+                        <span class="burgerClose">x</span>
+
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Департамент проектирования</a>
+                    <ul>
+                        <li>
+                            <a href="#">1</a>
+                            <ul>
+                                <li><a href="#">1.1</a></li>
+                                <li><a href="#">1.2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                            <ul>
+                                <li><a href="#">2,1</a></li>
+                                <li><a href="#">2,1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Департамент строительства</a>
+                    <ul>
+                        <li>
+                            <a href="#">Строительство крупных объектов</a>
+                        </li>
+                        <li>
+                            <a href="#">Малоэтажное строительство</a>
+                        </li>
+                        <li>
+                            <a href="#">Подбор земельных участков и организация сделки</a>
+                        </li>
+                        <li>
+                            <a href="#">Разработка градостроительной документации</a>
+                        </li>
+                        <li>
+                            <a href="#">Архитектура и проектирование</a>
+                        </li>
+                        <li>
+                            <a href="#">Организация продаж</a>
+                        </li>
+                        <li>
+                            <a href="#">Управляющая компания</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Департамент эксплуатации</a>
+                    <ul>
+                        <li>
+                            <a href="#">Строительство крупных объектов</a>
+                        </li>
+                        <li>
+                            <a href="#">Малоэтажное строительство</a>
+                        </li>
+                        <li>
+                            <a href="#">Подбор земельных участков и организация сделки</a>
+                        </li>
+                        <li>
+                            <a href="#">Разработка градостроительной документации</a>
+                        </li>
+                        <li>
+                            <a href="#">Архитектура и проектирование</a>
+                        </li>
+                        <li>
+                            <a href="#">Организация продаж</a>
+                        </li>
+                        <li>
+                            <a href="#">Управляющая компания</a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="#">О компании</a>
+                </li>
+                <li>
+                    <a href="#">Каталог домов</a>
+                </li>
+                <li><a href="#">Проекты</a></li>
+                <li><a href="#">Инвесторам</a></li>
+                <li><a href="#">Инвесторам</a></li>
+                <li class="burger_footer">
+                    <span>info@rosneo.ru</span><span>&#10072;</span><span>8 (800) 555-55-55</span>
+                </li>
+                <li class="footer_call"><a href="">Обратный звонок</a></li>
+            </ul>
+        </div>
+    </div>
+
 </header>
 <!-- -----Mobile main slider----- -->
 <div class="main-mobile-slider swiper-container">
@@ -104,6 +212,9 @@
     </div>
     <div class="project_pagination"></div>
 </div>
+
+
+
 <main>
     <!-- ------SLider------ -->
     <div class="container">
@@ -695,8 +806,7 @@
         <div class="modal_img"><img src="./assets/img/modal/modal_img.png" alt=""></div>
     </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/2.2.0/jquery.waitforimages.min.js"></script>
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -712,6 +822,7 @@
 
 </script>
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="./js/slinky.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/2.2.0/jquery.waitforimages.min.js"></script>
 <script src="./imask.js"></script> <!-- Подключаем плагин локально -->
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=API_KEY" type="text/javascript"></script>

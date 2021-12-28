@@ -1,8 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const slinky = $('.js-menu').slinky({
+        title: true
+    });
 
-    (function(){
-        $(".flex-slide").each(function(){
-            $(this).hover(function(){
+   document.querySelector('.burger').addEventListener('click', () => {
+        document.querySelector('.slinky-menu').classList.add('activeBurger')
+    })
+    document.querySelector('.burgerClose').addEventListener('click', ()=>{
+        document.querySelector('.slinky-menu').classList.remove('activeBurger')
+
+    })
+
+
+ document.querySelector('.callback_btn').addEventListener('click', ()=>{
+     document.querySelector('.callback_modal').style.display = 'block'
+ })
+    document.querySelector('.close').addEventListener('click', ()=>{
+        document.querySelector('.callback_modal').style.display = 'none'
+    })
+    (function () {
+        $(".flex-slide").each(function () {
+            $(this).hover(function () {
                 $(this).find('.flex-title').css({
                     transform: 'rotate(0deg)',
                     top: '25%'
