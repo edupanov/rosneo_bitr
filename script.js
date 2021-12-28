@@ -117,9 +117,9 @@ const fakeNewsData = [
     const build = document.querySelector('.build')
     const exploitation = document.querySelector('.exploitation')
 
-    const projectRotate = document.querySelector('.project-rotate')
-    const buildRotate = document.querySelector('.build-rotate')
-    const exploitationRotate = document.querySelector('.exploitation-rotate')
+    const projectRotate = document.querySelector('.flex-title-project')
+    const buildRotate = document.querySelector('.flex-title-build')
+    const exploitationRotate = document.querySelector('.flex-about-exploitation')
 
     const projectChecked = document.querySelector('.project_checked')
     const changeButtonProject = document.querySelector('.change_button_project')
@@ -136,26 +136,25 @@ const fakeNewsData = [
         const hoveredExploitation = isHover(exploitation);
         if (hoveredProject) {
             changeButtonProject.addEventListener('click', () => {
-            projectChecked.style.display = 'block'
         })
-        projectRotate.style.display = 'none'
-        buildRotate.style.display   = 'block'
-        exploitationRotate.style.display   = 'block'
+            projectRotate.style.transform = "rotate(0deg)"
+            buildRotate.style.transform = "rotate(90deg)"
+            exploitationRotate.style.transform = "rotate(90deg)"
     }
     if (hoveredBuild) {
-        projectRotate.style.display = 'block'
-        buildRotate.style.display   = 'none'
-        exploitationRotate.style.display   = 'block'
+        projectRotate.style.transform = "rotate(90deg)"
+        buildRotate.style.transform = "rotate(0deg)"
+        exploitationRotate.style.transform = "rotate(90deg)"
     }
     if (hoveredExploitation) {
-        projectRotate.style.display = 'block'
-        buildRotate.style.display   = 'block'
-        exploitationRotate.style.display   = 'none'
+        projectRotate.style.transform = "rotate(90deg)"
+        buildRotate.style.transform = "rotate(90deg)"
+        exploitationRotate.style.transform = "rotate(0deg)"
     }
     if(!hoveredProject && !hoveredBuild && !hoveredExploitation){
-        projectRotate.style.display = 'none'
-        buildRotate.style.display   = 'none'
-        exploitationRotate.style.display   = 'none'
+        projectRotate.style.transform = "rotate(0deg)"
+        buildRotate.style.transform = "rotate(0deg)"
+        exploitationRotate.style.transform = "rotate(0deg)"
     }
 });
 

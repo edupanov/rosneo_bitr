@@ -1967,7 +1967,7 @@ input[type="file"] {
     font-size: 6vw;
 }
 
-.home {
+.project {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/img/project_full.png);
     background-size: cover;
     background-position: center center;
@@ -1975,7 +1975,7 @@ input[type="file"] {
 }
 @media screen and (min-width: 768px) {
 
-    .home {
+    .project {
         -moz-animation: aboutFlexSlide;
         -moz-animation-duration: 3s;
         -moz-animation-iteration-count: 1;
@@ -2006,7 +2006,7 @@ aboutFlexSlide {  0% {
 }
 @media screen and (min-width: 768px) {
 
-    .flex-title-home {
+    .flex-title-project {
         -moz-animation: homeFlextitle;
         -moz-animation-duration: 3s;
         -moz-animation-iteration-count: 1;
@@ -2036,10 +2036,10 @@ homeFlextitle {  0% {
     }
 }
 
-.flex-about-home { opacity: 0; }
+.flex-about-project { opacity: 0; }
 @media screen and (min-width: 768px) {
 
-    .flex-about-home {
+    .flex-about-project {
         -moz-animation: flexAboutHome;
         -moz-animation-duration: 3s;
         -moz-animation-iteration-count: 1;
@@ -2066,14 +2066,14 @@ flexAboutHome {  0% {
     }
 }
 
-.about {
+.build {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/img/build_full.png');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
 
-.work {
+.exploitation {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/img/exploitation_full.png');
     background-size: cover;
     background-position: center center;
