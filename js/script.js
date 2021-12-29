@@ -252,13 +252,16 @@ const swiperProjects = new Swiper('.image-slider', {
 })
 
 // Yandex map
+const mapData = [
+    {moscow: [55.75021860081118, 37.62227867752328]}
+]
 
-ymaps.ready(init);
+    ymaps.ready(init);
 
 function init() {
 
     let myMap = new ymaps.Map('map', {
-        center: [55.75021860081118, 37.62227867752328],
+        center: mapData[0].moscow,
         zoom: 15,
         controls: []
     }, {
@@ -372,6 +375,8 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+
 
     document.querySelector('.burger').addEventListener('click', () => {
         document.querySelector('.slinky-menu').classList.add('activeBurger')
