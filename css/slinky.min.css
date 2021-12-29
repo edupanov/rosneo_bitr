@@ -197,3 +197,8 @@ font-size: 4vw;
     font-size: 1.5vw;
   }
   }
+@media (min-width: 1561px) {
+  .slinky-theme-default ul li .next {
+    display: none !important;
+  }
+}
