@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             $(this).hover(function () {
                 $(this).find('.flex-title').css({
                     transform: 'rotate(0deg)',
-                    top: '25%'
+                    top: '40%'
                 });
                 $(this).find('.flex-about').css({
                     opacity: '1'
