@@ -234,12 +234,15 @@ main {
     margin: auto;
     text-align: center;
     transform: rotate(0deg);
-    top: 71%;
+    top: 34vw;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
+}
+.flex-title p {
+    margin: 0;
 }
 .flex-about {
     opacity: 0;
@@ -260,12 +263,14 @@ main {
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
 }
+
 .flex-slide {
     -webkit-flex: 1;
     /* Safari 6.1+ */
     -ms-flex: 1;
     /* IE 10 */
     flex: 1;
+    flex-shrink: 0.5;
     margin: 0 5px;
     cursor: pointer;
     -webkit-transition: all 500ms ease;
@@ -282,22 +287,22 @@ main {
     font-size: 6vw;
 }
 .project {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/project_full.png);
+    background-image: url(../assets/img/project_full.png);
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 }
 .build {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/img/build_full.png');
+    background-image: url('../assets/img/build_full.png');
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 }
 .exploitation {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/img/exploitation_full.png');
+    background-image:url('../assets/img/exploitation_full.png');
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 }
 
 
