@@ -1045,7 +1045,8 @@ width: 8vw;
     margin-top: 8vw;
 }
 .news_bg {
-    background-color: #EEF2F6;
+    /*background-color: #EEF2F6;*/
+    background: linear-gradient(rgb(220 222 224), rgb(255 255 255));
 }
 .news_title_inner {
     display: flex;
