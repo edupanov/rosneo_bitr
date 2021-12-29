@@ -1303,7 +1303,9 @@ background-color: #ffffff;
     justify-content: space-between;
     align-items: center;
 }
-
+.footer_top {
+    color: #666;
+}
 .footer_social, .footer_company_links {
     margin-top: 1vw;
 }
@@ -1315,7 +1317,8 @@ background-color: #ffffff;
     display: flex;
 }
 .footer_social-links_items a img {
-    width: 3vw;
+    width: 2.5vw;
+    margin: 0 0.2vw;
 }
 .privacy_policy{
     color: #C1C1C1;
@@ -1835,8 +1838,12 @@ input[type="file"] {
         font-size: 2.8vw;
         padding: 1px 3px;
     }
+    .news_bg {
+        height: 104vw;
+    }
     .question {
         display: block;
+        margin-top: 0;
     }
     .question_img {
         text-align: end;
@@ -2060,6 +2067,15 @@ input[type="file"] {
 @media (min-width: 1561px) {
     .department_item:hover {
         border-bottom: 1px solid #666;
+    }
+}
+
+@media (min-width: 478px) {
+    .news_bg {
+        height: 40vw;
+    }
+    .question {
+        margin-top: 0;
     }
 }
 
