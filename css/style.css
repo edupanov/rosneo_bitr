@@ -458,7 +458,7 @@ main {
 }
 
 .consult_background {
-    height: 30.5vw;
+    height: 100%;
     background: url("../assets/img/bacground_consult.png") no-repeat;
     z-index: 1;
     display: flex;
@@ -1127,6 +1127,7 @@ background-color: #ffffff;
 .news-slider_wrapper_control {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .news-button-prev img , .news-button-next img {
     width: 3.5vw;
@@ -1215,7 +1216,7 @@ background-color: #ffffff;
 
 .question_label_text {
     font-size: 1vw;
-    color: #BDC7D2;
+    color: #A2AFBD;
 }
 
 .question_checkbox:checked,
@@ -1579,7 +1580,7 @@ input[type="file"] {
     .consult {
         margin-top: 12.7vw;
         position: relative;
-        height: 120vw;
+        height: 130vw;
         max-height: 575px;
     }
     .consult_background {
@@ -1642,6 +1643,7 @@ input[type="file"] {
     }
     .consult_label_text {
         font-size: 3vw;
+        margin-top: 2vw
     }
     .our_progress-slider{
         display: block;
@@ -1733,7 +1735,7 @@ input[type="file"] {
         position: absolute;
         background-color: #EEF2F6;
         width: 91.7vw;
-        height: 221.7vw;
+        height: 100%;
     }
     .career_inner div img {
         top: -5vw;
@@ -1749,7 +1751,8 @@ input[type="file"] {
         left: 2vw;
     }
     .news_button {
-left: 6vw;
+        margin-top: 5vw;
+        order: 1;
     }
     .career_text{
         display: block;
@@ -1770,14 +1773,12 @@ left: 6vw;
     }
     .social_inner {
         flex-direction: column;
-        margin-top: 10vw;
     }
     .social_img {
         order: -1;
     }
     .social_img img {
-        width: 90vw;
-        right: 0;
+        width: 92vw;
     }
     .social h3, .career h3 {
         font-size: 10.2vw;
@@ -1898,7 +1899,7 @@ left: 6vw;
         padding: 0 4vw;
     }
     .footer_social-links_items a img {
-        width: 6vw;
+        width: 8vw;
     }
     .footer_company_links, .footer_bottom {
         display: flex;
@@ -1936,9 +1937,13 @@ left: 6vw;
     .footer_hide {
         display: block;
         font-size: 3vw;
-        width: 100%;
+        width: 115%;
         color: #666;
         background-color: #EEF2F6;
+        padding: 0 6vw;
+    }
+    .footer_social-links_items a {
+        margin: 0 1vw;
     }
 
     .footer_contact_hide {
