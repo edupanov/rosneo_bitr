@@ -359,15 +359,19 @@ const modal = document.querySelector('#myModal');
 
 
 const callbackBtn = document.querySelector(".callback_btn");
+const modalCallbackBtn = document.querySelector(".modal_callback_btn");
 
 
 const span = document.querySelector(".close");
 
-
-callbackBtn.onclick = function () {
+    modalCallbackBtn.onclick =  (e) => {
+        e.preventDefault()
+        modal.style.display = "block";
+    }
+callbackBtn.onclick =  (e) => {
     modal.style.display = "block";
 }
-span.onclick = function () {
+span.onclick =  () => {
     modal.style.display = "none";
 }
 window.onclick = function (event) {
