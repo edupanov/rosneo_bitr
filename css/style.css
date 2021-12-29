@@ -220,7 +220,7 @@ main {
 
 .flex-container {
     position: relative;
-    height: 47vw;
+    height: 47.4vw;
     width: 100%;
     display: -webkit-flex;
     /* Safari */
@@ -1712,7 +1712,7 @@ input[type="file"] {
     }
     .our_objects_text {
         font-size: 5.9vw;
-        padding: 0 7vw;
+        padding: 0;
     }
     #map {
         width: 100%;
@@ -1746,7 +1746,7 @@ input[type="file"] {
 
     }
     .career_button {
-        left: 3vw;
+        left: 2vw;
     }
     .news_button {
 left: 6vw;
@@ -1807,7 +1807,6 @@ left: 6vw;
     .news_title_inner {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
     }
     .news_filters {
         width: 82vw;
@@ -1855,7 +1854,12 @@ left: 6vw;
     }
     .question_form {
         position: relative;
-        bottom: 30vw;
+        bottom: 20vw;
+    }
+    .question_form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .question_form form div {
         padding: 0 3vw;
@@ -1913,6 +1917,7 @@ left: 6vw;
     }
     .footer_top {
         display: none;
+        color: #666;
     }
     .footer_link-item {
         background-color: #ffffff;
@@ -1953,10 +1958,6 @@ left: 6vw;
 }
 
 @media (max-width: 379px) {
-    .consult {
-        height: 124vw;
-        max-height: 470px;
-    }
 }
 @media (max-width: 292px) {
     .career_button {
@@ -1964,9 +1965,6 @@ left: 6vw;
     }
 }
 @media (max-width: 269px) {
-    .consult {
-        height: 140vw;
-    }
 }
 
 

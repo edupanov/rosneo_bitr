@@ -141,17 +141,17 @@ const fakeNewsData = [
             changeButtonProject.addEventListener('click', () => {
         })
             projectRotate.style.transform = "rotate(0deg)"
-            buildRotate.style.transform = "rotate(90deg)"
-            exploitationRotate.style.transform = "rotate(90deg)"
+            buildRotate.style.transform = "rotate(-90deg)"
+            exploitationRotate.style.transform = "rotate(-90deg)"
     }
     if (hoveredBuild) {
-        projectRotate.style.transform = "rotate(90deg)"
+        projectRotate.style.transform = "rotate(-90deg)"
         buildRotate.style.transform = "rotate(0deg)"
-        exploitationRotate.style.transform = "rotate(90deg)"
+        exploitationRotate.style.transform = "rotate(-90deg)"
     }
     if (hoveredExploitation) {
-        projectRotate.style.transform = "rotate(90deg)"
-        buildRotate.style.transform = "rotate(90deg)"
+        projectRotate.style.transform = "rotate(-90deg)"
+        buildRotate.style.transform = "rotate(-90deg)"
         exploitationRotate.style.transform = "rotate(0deg)"
     }
     if(!hoveredProject && !hoveredBuild && !hoveredExploitation){
