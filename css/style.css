@@ -52,8 +52,7 @@ a {
 }
 
 .department_dropped_item {
-    margin-top: 50px;
-    padding: 0 1vw;
+    padding: 1vw;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -1296,6 +1295,7 @@ background-color: #ffffff;
     font-size: 0.84vw;
     width: 95vw;
     margin: 0 auto;
+    padding: 2vw 0;
 }
 
 .footer_social, .footer_company_links, .footer_bottom{
@@ -2001,6 +2001,11 @@ input[type="file"] {
     }
 }
 @media (max-width: 269px) {
+}
+@media (min-width: 1561px) {
+    .department_item:hover {
+        border-bottom: 1px solid #666;
+    }
 }
 
 
