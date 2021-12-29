@@ -1496,6 +1496,9 @@ input[type="file"] {
     .logIn {
         display: none;
     }
+    .footer_call {
+        display: block;
+    }
 }
 
 @media (max-width: 479px) {
@@ -2122,8 +2125,7 @@ input[type="file"] {
         padding: 2vw 33vw;
     }
 }
-@media (max-width: 269px) {
-}
+
 @media (min-width: 1561px) {
     .department_item:hover {
         border-bottom: 1px solid #666;
