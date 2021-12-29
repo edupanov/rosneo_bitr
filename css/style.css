@@ -1918,7 +1918,7 @@ input[type="file"] {
         flex-direction: column;
         width: 100%;
     }
-       .footer_bottom-items {
+    .footer_bottom-items {
         padding-right: 1vw;
         display: flex;
         width: 100%;
@@ -1971,56 +1971,12 @@ input[type="file"] {
         color: #25A4FF;
     }
 
-
-
-    .callback_modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 5; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        /*overflow: auto; !* Enable scroll if needed *!*/
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        backdrop-filter: blur(8px);
-        max-height: 100vh;
-        overflow: hidden
-    }
     .modal-content {
         width: 85%;
     }
     .modal_tittle {
         font-size: 4.54vw;
         margin: 0 0 0 2vw;
-    }
-    .modal_input {
-        border: none;
-        border-bottom: 1px solid #000000;
-        background: none;
-        font-size: 1.6vw;
-        width: 23vw;
-        outline: none;
-        color: #000000;
-        margin-bottom: 2vw;
-    }
-    .modal_input:checked {
-        border: none;
-    }
-    input[type="file"] {
-        display: none;
-    }
-    .custom-file-upload {
-        width: 23vw;
-        padding: 1vw 0;
-        border: none;
-        background-color: #EEF2F6;
-        display: inline-block;
-        cursor: pointer;
-        text-align: center;
-        font-size: 0.95vw;
     }
     .custom-file-upload img {
         width: 2.58vw;
@@ -2036,28 +1992,10 @@ input[type="file"] {
     .modal_img img {
         width: 33.5vw;
     }
-    .modal_submit {
-        margin: 1vw 0;
-        font-size: 1.1vw;
-        font-style: normal;
-        font-weight: normal;
-        color: #ffffff;
-        z-index: 3;
-        background: radial-gradient(122.69% 531.67% at -11.54% -45%, #2998FF 0%, #29F2FF 100%);
-        width: 11vw;
-        height: 3.3vw;
-        border: none;
-    }
     .close {
         font-size: 6vw;
         width: 6vw;
         height: 6vw;
-    }
-    .close:hover,
-    .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
     }
     .modal-body {padding: 6vw 1vw;}
     .modal-body .question_form {
@@ -2067,17 +2005,29 @@ input[type="file"] {
         font-size: 4.6vw;
         width: 42vw;
     }
-    .modal-body .question_form form .question_form-style .custom-file-upload{
+
+    .modal-body .question_form form .question_form-style .custom-file-upload {
         margin-top: 2vw;
         width: 43vw;
         font-size: 2.5vw;
     }
-    .modal-body .question_form form .question_checkbox:not(:checked) + .question_label_text  {
+    .modal-body .question_form form .modal_submit {
+        font-size: 3.1vw;
+        width: 80%;
+        height: 4.3vw;
+    }
+
+    .modal-body .question_form form .question_checkbox:not(:checked) + .question_label_text {
         margin: 0 5%;
         top: 0;
-        font-size: 1.5vw;
+        font-size: 1.7vw;
     }
-    .modal-body .question_form form .question_checkbox:checked + .question_label_text{
+
+    .modal-body .question_form form .question_form-style .modal_submit {
+
+    }
+
+    .modal-body .question_form form .question_checkbox:checked + .question_label_text {
         top: 0;
         font-size: 1.5vw;
 
